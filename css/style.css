@@ -1,0 +1,36 @@
+body {
+	background-color:  red;
+	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 15px;
+  	color: #222222;
+  	line-height: 1.5;
+}
+
+#wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+header {
+	padding-bottom: 20px;
+	margin-left: 50px;
+}
+
+h1 {
+	font-family: "Permanent Marker", Georgia, sans-serif;
+	font-weight: normal;
+	font-size: 45 px;
+	
+	color: black;
+}
+
+
+
+main {
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+footer {
+	font-size: 20px;
+	text-decoration-line: none;
+	padding-left: 50px;
+}
