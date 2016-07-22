@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>NYC Pressure Washing</title>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,700">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-  <body>
-    <div id="wrapper">
-  <header>
-  	 <h1>NYC Pressure Washing</h1>
-	   <h2>Please select your location in Manhattan</h2>
-  	 <select id="item">
-  		 <option>0</option>
-  		 <option>1</option>
-   		 <option>2</option>
- 	     <option>3</option>
- 	     <option>4</option>
- 	     <option>5</option>
- 	     <option>6</option>
- 	     <option>7</option>
- 	     <option>8</option>
- 	     <option>9</option>
- 	     <option>10</option>
- 	   </select>
 
- 	  <h2>What horizontal square footage needs blasting?</h2>
+<head>
+	<title>NYC Pressure Washing</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,700">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
- 		     <input id="footLength">feet x <input id="footWidth">feet =   
-		     <button id="clickme">Calculate Square Horizontal Footage</button>
-         <h2>Your horizontal square footage for estimating cost of job is =>
-         <span id="sqFootage"></span>    <= square feet</h2> 		
-  	
-  </header>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>NYC Pressure Washing</h1>
+		</header>
 
- <main>
-  		<img src="../mapNyc.jpg" alt="mapNyc.jpg">
+		<main>
 
-  		<h2>Select time period of day (least expensive is 4am-8am)</h2>
-  		<select id="4am-8am"><option>4am-8am</option></select>
-			<select id="8am-noon"><option>8am-noon</option></select>  		 	
-			<select id="noon-4pm"><option>noon-4pm</option></select>
-			<select id="4pm-8pm"><option>4pm-8pm</option></select>
-			<select id="8pm-midnight"><option>8pm-midnight</option></select>
-			<select id="midnight-4am"><option>midnight-4am</option></select>
-</main>
+            <h3>What horizontal square footage needs blasting?</h3>
+            <input id="footLength" placeholder="width in feet"> x
+            <input id="footWidth" placeholder="length in feet"> =
+            <button id="clickme">Calculate Square Horizontal Footage</button>
+            <h5>Total is <span id="sqFootage">__</span> sq. ft.</h5>
 
-	<footer>
-  		<a href="#">About</a>
-  		<a href="#">Contact Us</a>
-  		<a href="#">Rates</a>
-  </footer>
+            <hr>
+            <h3>Use map below to select your Manhattan location</h3>
+            <select id="item">
+            	<option>0</option>
+            	<option>1</option>
+            	<option>2</option>
+            	<option>3</option>
+            	<option>4</option>
+            	<option>5</option>
+            	<option>6</option>
+            	<option>7</option>
+            	<option>8</option>
+            	<option>9</option>
+            	<option>10</option>
+            </select>
 
+			<div>
+			    <img src="mapNyc.jpg" alt="mapNyc.jpg">
+			</div>
 
-  <!--<script src="js/project.js" type="text/javascript"></script>-->
- </div>
-  <script type="text/javascript" src="js/project.js"></script>
- </body>
+            <hr>
+			<h3>Select time period of day (least expensive is 4am-8am)</h3>
+			<select>
+				<option value="4am-8am">4am-8am</option>
+				<option value="8am-noon">8am-noon</option>
+				<option value="noon-4pm">noon-4pm</option>
+				<option value="4pm-8pm">4pm-8pm</option>
+				<option value="8pm-midnight">8pm-midnight</option>
+				<option value="midnight-4am">midnight-4am</option>
+			</select>
+            <hr>
+		</main>
+
+		<footer>
+			<a href="#">About</a>
+			<a href="#">Contact Us</a>
+			<a href="#">Rates</a>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/project.js"></script>
+</body>
+
 </html>
