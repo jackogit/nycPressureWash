@@ -17,12 +17,11 @@
 		<main>
 
             <h3>What horizontal square footage needs blasting?</h3>
-            <input id="footLength" placeholder="width in feet"> x
-            <input id="footWidth" placeholder="length in feet"> =
-            <button id="clickme">Calculate Square Horizontal Footage</button>
-            <h5>Total is <span id="sqFootage">__</span> sq. ft.</h5>
-
-            <hr>
+            	<input id="footLength" placeholder="width in feet"> x
+            	<input id="footWidth" placeholder="length in feet"> =
+            	<button id="clickme">Calculate Square Horizontal Footage</button>
+			<h5>Your calculate Square Footage for water blasting horizonal surface is <span id="sqFootage">___</span> sq. ft.</h5>
+		<hr>
             <h3>Use map below to select your Manhattan location</h3>
             <select id="item">
             	<option>0</option>
@@ -42,15 +41,17 @@
 			    <img src="mapNyc.jpg" alt="mapNyc.jpg">
 			</div>
 
-            <hr>
+        <hr>
 			<h3>Select time period of day (least expensive is 4am-8am)</h3>
-			<select>
-				<option value="4am-8am">4am-8am</option>
-				<option value="8am-noon">8am-noon</option>
-				<option value="noon-4pm">noon-4pm</option>
-				<option value="4pm-8pm">4pm-8pm</option>
-				<option value="8pm-midnight">8pm-midnight</option>
-				<option value="midnight-4am">midnight-4am</option>
+			<select>	
+				<div class="time">
+					<option value="4am-8am">4am-8am</option>
+					<option value="8am-noon">8am-noon</option>
+					<option value="noon-4pm">noon-4pm</option>
+					<option value="4pm-8pm">4pm-8pm</option>
+					<option value="8pm-midnight">8pm-midnight</option>
+					<option value="midnight-4am">midnight-4am</option>
+				</div>
 			</select>
             <hr>
 		</main>
@@ -62,6 +63,7 @@
 		</footer>
 	</div>
 	<script type="text/javascript" src="js/project.js"></script>
+	<script type="text/javascript" src="js/jQuery.js"></script>
 </body>
 
 </html>
